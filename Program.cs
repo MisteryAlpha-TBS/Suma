@@ -1,12 +1,18 @@
-﻿int num1 = 0;
-int num2 = 0;
+﻿int numero = 0;
 int resultado = 0;
+int ejecuciones = 0;
 
-Console.WriteLine("Ingrese el primer numero a sumar");
-num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Ingrese el segundo numero a sumar");
-num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Cuantos números esea sumar?");
+ejecuciones = Convert.ToInt32(Console.ReadLine());
 
-resultado = num1 + num2;
-Console.WriteLine("El resultado es: " +  resultado);
+for (int i = 0; i < ejecuciones; i++)
+{
+
+    Console.WriteLine("Ingrese el numero (" + (i + 1) + "): ");
+    numero = Convert.ToInt32(Console.ReadLine());
+    resultado += numero;
+
+}
+
+Console.WriteLine("El resultado es: " + resultado);
