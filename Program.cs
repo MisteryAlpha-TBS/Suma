@@ -3,7 +3,7 @@ int resultado = 0;
 int ejecuciones = 0;
 
 
-Console.WriteLine("Cuantos números esea sumar?");
+Console.WriteLine("Cuantos números desea sumar?");
 ejecuciones = Convert.ToInt32(Console.ReadLine());
 
 for (int i = 0; i < ejecuciones; i++)
@@ -15,4 +15,4 @@ for (int i = 0; i < ejecuciones; i++)
 
 }
 
-Console.WriteLine("El resultado es: " + resultado);
+Console.WriteLine("\nEl resultado es: " + resultado);
